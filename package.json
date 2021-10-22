@@ -1,0 +1,15 @@
+{
+  "name": "benjamin_kee_web_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assets/scripts/b3dml320f.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Benjamin Kee ",
+  "license": "ISC",
+  "dependencies": {
+    "emailjs-com": "^2.6.4"
+  }
+}

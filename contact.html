@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<!--Website By Benjamin Kee-->
+<html lang="en">
+    <!--Home Page Information-->
+    <head>
+        <!--Meta Tags For Browser SEO-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="DC.title" content="Gladon Chua - Contactr">
+        <meta name="title" content="Gladon Chua - Contact">
+        <meta name="application-name" content="benjamin_kee_web_assignment">
+        <meta name="description" content="Gladon Chua is a professional marketer from New Zealand, having earned a PhD and a Bachelor's Degree in sales and marketing after graduating from Harvard University.">
+        <meta name="keywords" content="gladon, chua, marketing, sales, resume, market, sale">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!--Title & Icon-->
+        <title>Gladon Chua - Contact</title>
+        <link rel="icon" type="image/png" href="assets/img/navbar_title_child.JPG">
+        <link rel="apple-touch-icon" href="assets/img/navbar_title_child.JPG">
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/css/contact_styles.css">
+        <link rel="stylesheet" href="assets/css/contactform.css">
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!--Scripts-->
+        <script src="assets/scripts/b3dml320f.js"></script>
+        <script src="assets/scripts/23f409hro2190.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/101fd1b1be.js" crossorigin="anonymous"></script>
+        <script src="https://www.momentcrm.com/embed"></script>
+
+        <!--Live Chat Function-->
+        <script>
+            MomentCRM("init", {
+                "teamId": "ascendus",
+                "doChat": true,
+                "doTracking": true,
+            });
+        </script>
+    </head>
+
+    <!--Website Loader-->
+    <div class="loader" id="loader">
+        <!--Loader Circles-->
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!--Page Content-->
+    <body onload="activateWebpage()">
+        <!--Navigation Bar-->
+        <header>
+            <div class="header-nav" id="header-nav" style="display: none;">
+                <!--Navigation Bar Icon/Title-->
+                <div class="navleftcontent" id="navleftcontent">
+                    <a href="index.html"><img src="assets/img/navbar_title_child.JPG" height="40" width="40" class="header-nav-logo" /></a>
+                    <a href="index.html" class="header-nav-title">
+                        <p class="header-nav-title"><strong>Gladon Chua</strong></p>
+                    </a>
+                </div>
+                
+                <!--Navigation Bar Links-->
+                <div class="navrightcontent" id="navrightcontent"> 
+                    <!--Navigation Bar Links List-->
+                    <ul>
+                        <li><a href="index.html" class="nav-item"><strong>Home</strong></a></li>
+                        <li><a href="about.html" class="nav-item"><strong>About</strong></a></li>
+                        <li><a href="qualifications.html" class="nav-item"><strong>Qualifications</strong></a></li>
+                        <li><a href="experience.html" class="nav-item"><strong>Experience</strong></a></li>
+                    </ul>
+        
+                    <!--Navigation Bar Contact Button-->
+                    <a href="contact.html" class="nav-invite-btn-url">
+                        <button class="nav-invite-btn"><strong>Contact</strong></button>
+                    </a>
+                </div>
+            </div>  
+        </header>
+
+        <!--Page Content-->
+        <div class="content" id="content" style="display: none;">
+            <div class="contact-header" id="contact-header">
+                <img src="assets/img/navbar_title_child.JPG" alt="Picture of Gladon Chua" height="150" width="150" style="border-radius: 50%;">
+                <br>
+                <h1>Contact Me</h1>
+            </div>
+            <section class="ftco-section" style="margin-top: -7%;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="wrapper">
+                                <div class="row no-gutters">
+                                    <div class="col-md-6 d-flex align-items-stretch">
+                                        <div class="contact-wrap w-100 p-md-5 p-4 py-5" style="background-color: #7289da;">
+                                            <h3 class="mb-4">Write To Me</h3>
+                                            <div id="form-message-warning" class="mb-4"></div>
+                                            <div id="form-message-success" class="mb-4">
+                                                Your message was sent, thank you!
+                                            </div>
+                                            <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="submit" value="Send Message" class="btn btn-primary">
+                                                            <div class="submitting"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-stretch" style="background-color: #2f3136;">
+                                        <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                                            <h3>Contact Information</h3>
+                                            <p class="mb-4" style="color: #7289da;">Feel free to contact me anytime</p>
+                                            <div class="dbox w-100 d-flex align-items-start">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-map-marker"></span>
+                                                </div>
+                                                <div class="text pl-3" style="color: #7289da; margin-top: -2%;">
+                                                    <p><span>Address:</span> 575 Chapel Road, East Tāmaki, Auckland 2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-phone"></span>
+                                                </div>
+                                                <div class="text pl-3" style="color: #7289da; margin-top: -2%;">
+                                                    <p><span>Phone:</span> <a href="tel://1234567920" style="color: #7289da;">64+ 028 412 2438</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-paper-plane"></span>
+                                                </div>
+                                                <div class="text pl-3" style="color: #7289da; margin-top: -2%;">
+                                                    <p><span>Email:</span> <a href="mailto:gladon.chua@my.bdsc.school.nz" style="color: #7289da;">gladon.chua@my.bdsc.school.nz</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-globe"></span>
+                                                </div>
+                                                <div class="text pl-3" style="color: #7289da; margin-top: -2%;">
+                                                    <p><span>Website:</span> <a href="index.html" style="color: #7289da;">gladonchua.com</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="iconswrapper">
+                                                <a href="https://facebook.com/" style="color: black;"><div class="icon facebook">
+                                                    <div class="tooltip">Facebook</div>
+                                                    <span><i class="fab fa-facebook-f"></i></span>
+                                                </div></a>
+                                                <a href="https://twitter.com/" style="color: black;"><div class="icon twitter">
+                                                    <div class="tooltip">Twitter</div>
+                                                    <span><i class="fab fa-twitter"></i></span>
+                                                </div></a>
+                                                <a href="https://facebook.com/" style="color: black;"><div class="icon instagram">
+                                                    <div class="tooltip">Instagram</div>
+                                                    <span><i class="fab fa-instagram"></i></span>
+                                                </div></a>
+                                                <a href="https://facebook.com/" style="color: black;"><div class="icon github">
+                                                    <div class="tooltip">Github</div>
+                                                    <span><i class="fab fa-github"></i></span>
+                                                </div></a>
+                                                <a href="https://facebook.com/" style="color: black;"><div class="icon youtube">
+                                                    <div class="tooltip">Youtube</div>
+                                                    <span><i class="fab fa-youtube"></i></span>
+                                                </div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script src="assets/scripts/jquery.min.js"></script>
+            <script src="assets/scripts/popper.js"></script>
+            <script src="assets/scripts/bootstrap.min.js"></script>
+            <script src="assets/scripts/jquery.validate.min.js"></script>
+            <script src="assets/scripts/main.js"></script>
+        </div>
+
+        <!--Page Footer-->
+        <footer class="footer" id="footer" style="display: none;">      
+            <!--Footer Image-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="545.127" height="223.285" viewBox="0 0 535.127 333.285" style="float: right; margin-right: -7%; margin-bottom: -5%">
+                <g id="Group_34" data-name="Group 34" transform="translate(-1384.873 -5067.715)">
+                    <path id="Path_1" data-name="Path 1" d="M806.491,1855H513.206L377.268,2045.784H668.412Z" transform="translate(1113.509 3212.715)" fill="#7289da"/>
+                    <path id="Path_2" data-name="Path 2" d="M712.41,1855h-229L377.268,1999.5H604.6Z" transform="translate(1007.605 3401.5)" fill="#7289da"/>
+                </g>
+            </svg>
+
+            <!--Footer Subscription Form-->
+            <div class="footersignup" id="footersignup">
+                <!--Footer Signup Header/Subheader-->
+                <h1 class="footersignupchild" id="footersignupchild">Stay In Touch</h1>
+                <p class="footersignupgrandchild" id="footersignupgrandchild">Sign-up to our newsletter to keep up to date.</p>
+                <!--Footer Signup Form-->
+                <div class="footersignupbox">
+                    <form onsubmit="addEmail()" class="signupform" id="signupform">
+                        <!--Input-->
+                        <input type="email" class="signupinput" id="signupinput" placeholder="Email Address" style="height: 30px; width: 150px;"></input>
+
+                        <!--Submit Button-->
+                        <input type="submit" class="footersignupsubmit" id="footersignupsubmit" value="Submit »" style="cursor: pointer;"></input>
+
+                        <!--Success Modal-->
+                        <section class="signupsuccess" id="signupsuccess" style="display: none; width: 160%; margin-left: -3%; padding-top: -15%;">
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="alert fade alert-simple alert-success alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show">                                     
+                                            <i class="start-icon far fa-check-circle faa-tada animated"></i>
+                                            <p><strong class="font__weight-semibold">Success!</strong>&nbsp;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span class="font__weight-semibold" id="closebtn" onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.style.display = 'none';">&times;</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+            </div>      
+
+            <!--Footer Navigation Links-->
+            <div class="footernav" id="footernav">
+                <!--Navigation Link Title-->
+                <h1 class="footernavchild" id="footernavchild">Navigation</h1>
+                <!--Links-->
+                <div class="footernavlinks" id="footernavlinks">
+                    <!--Left Column Links-->
+                    <ul class="footernavlinksleft" id="footernavlinksleft">
+                        <li><a href="index.html" style="text-decoration: none; color: #7289da;">Home</a></li>
+                        <li><a href="about.html" style="text-decoration: none; color: #7289da;">About</a></li>
+                        <li><a href="qualifications.html" style="text-decoration: none; color: #7289da;">Qualifications</a></li>
+                        <li><a href="experience.html" style="text-decoration: none; color: #7289da;">Experience</a></li>
+                    </ul>
+
+                    <!--Right Column Links-->
+                    <ul class="footernavlinksright" id="footernavlinksright">
+                        <li><a href="contact.html" style="text-decoration: none; color: #7289da;">Contact</a></li>
+                        <br>
+                        <li><a href="404.html" style="text-decoration: none; color: #7289da;">Privacy Policy</a></li>                        
+                    </ul>
+                </div>
+            </div>           
+
+            <!--Contact Section-->
+            <div class="footercontact" id="footercontact">
+                <!--Contact Section Title-->
+                <h1 class="footercontactchild" id="footercontactchild">Contact</h1>
+                <p class="footercontactchild2" id="footercontactchild2" style="margin-top: -3%;"><a href="mailto:gladon.chua@my.bdsc.school.nz" style="text-decoration: none; color: #7289da;"><strong>Email:</strong> gladon.chua@my.bdsc.school.nz</a>
+                <br>
+                <strong>Phone:</strong> (+64) 028 412 2438
+                </p>
+            </div>     
+            
+            <!--Footer Copyright & ExtraLinks-->
+            <p class="footertext" id="footertext">©2021 Gladon Chua. All rights reserved.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="404.html" style="text-decoration: none; color: #7289da;">Privacy Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html" style="text-decoration: none; color: #7289da;">Contact</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html" style="text-decoration: none; color: #7289da;">About</a>&nbsp;&nbsp;&nbsp;</p>
+
+            <!--Light Mode/Dark Mode Switch-->
+            <label class="switch">
+                <input type="checkbox" onclick="togglePage()">
+                <span class="slider round" id="slider"></span>
+
+                <!--Light/Dark Mode Switch Script-->
+                <script>
+                    var i = true; // Switch side boolean variable
+                    function togglePage() {
+                        i = !i; // Inverts the boolean variable value
+                        if (!document.styleSheets[0]) return; // Stops the function if the stylesheet can't be accessed
+                        const styleSheetLength = document.styleSheets[0].rules.length - 1; // The switch stylesheet element
+
+                        if (i === false) { // If dark mode is on
+                            document.styleSheets[0].removeRule(13); // Removes the scrollbar track CSS
+                            document.styleSheets[0].addRule("::-webkit-scrollbar-track", "background: #2f3136;", 13); // Adds the new scrollbar track CSS
+                            document.styleSheets[0].removeRule(styleSheetLength - 2); // Removes the CSS for the switch
+                            document.styleSheets[0].addRule(".slider.round::before", "border-radius: 50%; background-image: url('https://www.svgrepo.com/show/279157/sun-season.svg');", styleSheetLength - 2); // Appends the new switch CSS
+                        } else if (i === true) { // If light mode is on
+                            document.styleSheets[0].removeRule(13); // Removes the scrollbar track CSS
+                            document.styleSheets[0].addRule("::-webkit-scrollbar-track", "background: ##f1f1f1;;", 13); // Adds the new scrollbar track CSS
+                            document.styleSheets[0].removeRule(styleSheetLength - 2); // Removes the CSS for the switch
+                            document.styleSheets[0].addRule(".slider.round::before", "border-radius: 50%; background-image: url('https://d29fhpw069ctt2.cloudfront.net/icon/image/74251/preview.svg');", styleSheetLength - 2); // Appends the new switch CSS
+                        };
+
+                        document.body.classList.toggle("bodydark");
+                        document.getElementById("header-nav").classList.toggle("header-nav-dark"); 
+                    };
+                </script>
+            </label>
+        </footer> 
+    </body>
+
+    <!--Scroll To Top Button-->
+    <div onclick="topFunction()" class="scrolltop-btn" id="scrolltop-btn"><i class="fas fa-angle-up" style="margin-top: 25%;"></i></div>
+    <script type="text/javascript">
+        // The scroll to top button element in the HTML page.   
+        var button = document.getElementById("scrolltop-btn");
+
+        // When the users scrolls, call the scrollFunction function.
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        // When the user scrolls down 20px from the top of the document, show the button.
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            };
+        };
+
+        // When the user clicks on the button, scroll to the top of the document.
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</html>

@@ -1,0 +1,11 @@
+{
+    "short_name": "Gladon Chua",
+    "name": "Gladon Chua - Proffessional Marketer",
+    "description": "Gladon Chua is a professional marketer from New Zealand, having earned a PhD and a Bachelor's Degree in sales and marketing after graduating from Harvard University.",
+    "start_url": "/?source=pwa",
+    "background_color": "#ffffff",
+    "theme-color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff"
+}
