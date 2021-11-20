@@ -1,2 +1,2 @@
 # DIT Assessment
-A school digital technologies website assessment.
+A school digital technologies class website assessment.
